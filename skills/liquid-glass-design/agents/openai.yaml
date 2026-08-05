@@ -1,0 +1,4 @@
+interface:
+  display_name: "Liquid Glass Design"
+  short_description: "Design and review production-safe glass UI"
+  default_prompt: "Use $liquid-glass-design to decide, implement, and verify a restrained Liquid Glass interface."
