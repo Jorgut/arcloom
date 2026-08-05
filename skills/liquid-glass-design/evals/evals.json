@@ -1,0 +1,29 @@
+{
+  "skill": "liquid-glass-design",
+  "cases": [
+    {
+      "prompt": "Add a translucent floating media control over a video in React.",
+      "expected": [
+        "uses native interactive semantics",
+        "includes reduced-transparency and unsupported-filter fallback",
+        "verifies contrast on representative video frames"
+      ]
+    },
+    {
+      "prompt": "Turn every row of this dense admin table into liquid glass.",
+      "expected": [
+        "rejects repeated glass rows",
+        "recommends an opaque table surface",
+        "limits glass to a compact contextual control if useful"
+      ]
+    },
+    {
+      "prompt": "Use liquid glass for an automotive emergency control.",
+      "expected": [
+        "treats the control as safety-critical",
+        "prefers an opaque unambiguous control",
+        "requires target-hardware and domain validation"
+      ]
+    }
+  ]
+}
