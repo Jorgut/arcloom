@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "artifact_type": "component-library",
+  "name": "@jorgut/liquid-glass",
+  "display_name": "Jorgut Liquid Glass",
+  "version": "0.1.0",
+  "ecosystem": "react",
+  "source_path": "packages/react",
+  "capabilities": [
+    "frontend-ui",
+    "design-ux",
+    "hmi-design",
+    "animation-motion"
+  ],
+  "related_skills": [
+    "liquid-glass-design",
+    "accessibility-audit",
+    "review-animations"
+  ],
+  "license": "MIT"
+}
