@@ -1,0 +1,13 @@
+{
+  "name": "jorgut-liquid-glass",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspace @jorgut/liquid-glass",
+    "test": "npm run test --workspace @jorgut/liquid-glass",
+    "check": "npm run check --workspace @jorgut/liquid-glass"
+  }
+}
