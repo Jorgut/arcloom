@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f3f2ec">
+  <meta name="description" content="Arcloom：为设计师、开发者和 AI 构建者精选可信的界面组件、模板与工作流。">
+  <meta property="og:title" content="Arcloom — 让好资源，更容易被找到">
+  <meta property="og:description" content="探索界面组件、设计模板与 AI 工作流。每项资源都标注作者、来源和许可。">
+  <meta property="og:type" content="website">
+  <meta name="color-scheme" content="light">
+  <title>Arcloom — 让好资源，更容易被找到</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Arcloom 首页"><span class="brand-symbol">a</span><span>arcloom</span></a>
+    <nav class="main-nav" aria-label="主导航"><a href="#library">逛逛资源</a><a href="#principles">平台原则</a><a href="#footer">关于 Arcloom</a></nav>
+    <button class="button button-dark header-submit" data-open-submit>推荐资源 <span aria-hidden="true">↗</span></button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span>为设计与开发，找到趁手的下一块</div>
+        <h1>好资源，<br><em>自然成作品。</em></h1>
+        <p class="hero-intro">精选界面组件、设计模板与 AI 工作流。看清作者、来源和许可，再把喜欢的东西带进自己的项目。</p>
+        <div class="hero-actions"><a class="button button-acid" href="#library">探索资源 <span aria-hidden="true">↓</span></a><button class="text-button" data-open-submit>推荐一个资源 <span aria-hidden="true">↗</span></button></div>
+        <div class="hero-caption"><span class="caption-mark">✳</span>独立创作者 · 清晰来源 · 面向真实工作流</div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+        <div class="visual-core"><span>ar</span><i>✳</i></div>
+        <div class="float-note note-top"><span class="mini-label">组件 / COMPONENT</span><strong>Liquid Glass</strong><small>React · MIT · 可访问</small><b class="note-glyph">◈</b></div>
+        <div class="float-note note-bottom"><span class="mini-label">工作流 / WORKFLOW</span><strong>设计 → 代码</strong><small>Figma · React · AI</small><div class="mini-flow"><i></i><i></i><i></i><i></i></div></div>
+        <span class="star star-one">✳</span><span class="star star-two">✦</span>
+      </div>
+    </section>
+
+    <div class="ticker" aria-label="资源类型"><div>界面组件 <span>✳</span> 设计模板 <span>✳</span> 设计系统 <span>✳</span> AI 工作流 <span>✳</span> 创作者工具 <span>✳</span> 界面组件 <span>✳</span> 设计模板 <span>✳</span></div></div>
+
+    <section class="library section" id="library">
+      <div class="section-heading">
+        <div><div class="eyebrow eyebrow-muted">ARClOOM RESOURCE SHELF <span class="section-index">/ 001</span></div><h2>实用的东西，<em>认真地选。</em></h2><p class="section-description">先从能核实来源的资源开始。每一项都标明作者、技术和许可。</p></div>
+        <div class="shelf-count"><strong id="result-count">3</strong><span>项已收录</span></div>
+      </div>
+
+      <div class="catalog-controls">
+        <div class="filters" role="group" aria-label="按资源类型筛选">
+          <button class="filter-button is-active" data-filter="all" aria-pressed="true">全部 <span>03</span></button>
+          <button class="filter-button" data-filter="component" aria-pressed="false">组件 <span>02</span></button>
+          <button class="filter-button" data-filter="skill" aria-pressed="false">AI Skills <span>01</span></button>
+          <button class="filter-button" data-filter="template" aria-pressed="false">模板 <span>00</span></button>
+          <button class="filter-button favorites-filter" data-filter="favorites" aria-pressed="false"><span class="heart-icon">♡</span> 已收藏</button>
+        </div>
+        <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索资源、技术或作者" autocomplete="off"><kbd>/</kbd></label>
+        <label class="sort-box"><span>排序</span><select id="sort" aria-label="资源排序"><option value="featured">精选顺序</option><option value="az">名称 A–Z</option></select></label>
+      </div>
+
+      <div id="resource-grid" class="resource-grid" aria-live="polite"></div>
+      <div id="empty-state" class="empty-state" hidden><span>⌕</span><h3>这里还没有匹配的资源</h3><p>试试其他关键词，或者推荐一个你觉得值得收录的资源。</p><button class="button button-dark" data-open-submit>推荐资源 <span aria-hidden="true">↗</span></button></div>
+      <div class="catalog-footnote"><span class="footnote-icon">↗</span><p><strong>来源透明，授权清楚。</strong>当前目录只收录已核对来源与许可的资源，并链接至原始作者。未经授权，不复制或转售第三方作品。</p></div>
+    </section>
+
+    <section class="principles" id="principles">
+      <div class="principle-symbol">✳</div>
+      <div class="principle-copy"><div class="eyebrow">BUILT AROUND TRUST / 建立在信任之上</div><h2>找到灵感之后，<br>要有一条<em>清楚的路。</em></h2><p>先知道谁创作、从哪里获取、许可是什么，再决定如何使用。Arcloom 希望让发现资源这件事更省心，也让创作者的作品得到尊重。</p><button class="button button-outline" data-open-submit>我是创作者 <span aria-hidden="true">↗</span></button></div>
+      <div class="principle-stamp" aria-hidden="true"><span>SOURCE</span><b>↘</b><span>LICENSE</span><b>↘</b><span>USE</span></div>
+    </section>
+
+    <section class="closing-cta"><div><div class="eyebrow eyebrow-muted">THE FIRST SHELF IS TAKING SHAPE</div><h2>一起挑选<br><em>值得留下的工具。</em></h2></div><button class="button button-acid" data-open-submit>推荐资源 <span aria-hidden="true">↗</span></button></section>
+  </main>
+
+  <footer class="site-footer" id="footer"><a class="brand" href="#top"><span class="brand-symbol">a</span><span>arcloom</span></a><p>为设计与开发，找到趁手的下一块。</p><a class="footer-link" href="./terms.html">使用条款</a><a class="footer-link" href="./privacy.html">隐私说明</a><span class="footer-note">公开目录 · 资源链接回原始来源 · © 2026 Arcloom</span></footer>
+
+  <dialog id="resource-dialog" class="dialog resource-dialog" aria-labelledby="detail-title"><form method="dialog"><button class="dialog-close" aria-label="关闭">×</button></form><div id="resource-detail"></div></dialog>
+  <dialog id="submit-dialog" class="dialog submit-dialog" aria-labelledby="submit-title"><form id="submit-form"><button type="button" class="dialog-close" data-close-submit aria-label="关闭">×</button><div class="eyebrow eyebrow-muted">CREATOR SUBMISSION / 创作者投稿</div><h2 id="submit-title">推荐一项好资源。</h2><p class="dialog-intro">告诉我们去哪里查看。投稿会进入审核队列；提交不代表 Arcloom 已获得转载或销售授权。</p><label class="field-label" for="resource-name">资源名称 <span>必填</span></label><input class="form-input" id="resource-name" name="name" required maxlength="80" autocomplete="off" placeholder="例如：组件库 / Figma 模板 / Agent Skill"><label class="field-label" for="resource-url">原始链接 <span>必填</span></label><input class="form-input" id="resource-url" name="url" type="url" required maxlength="500" inputmode="url" placeholder="https://"><label class="field-label" for="resource-note">推荐理由 <span>选填</span></label><textarea class="form-input form-textarea" id="resource-note" name="note" maxlength="400" placeholder="它解决什么问题？许可或作者信息在哪里？"></textarea><label class="consent-row"><input type="checkbox" name="rights" required><span>我确认这是公开可访问的资源，并理解提交不代表 Arcloom 已获得转载或销售授权。</span></label><label class="honeypot" aria-hidden="true">Leave this field empty<input name="website" tabindex="-1" autocomplete="off"></label><p class="local-only-note" id="submission-note">投稿仅用于资源核验与收录审核。不要填写敏感或个人信息。</p><button class="button button-dark submit-button" type="submit">提交审核 <span aria-hidden="true">↗</span></button><div id="submit-success" class="submit-success" role="status" hidden>投稿已收到，等待人工核验。</div></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
