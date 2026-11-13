@@ -43,6 +43,111 @@ const resources = [
     sourceLabel: "GitHub Skill 文件",
     preview: "skill-preview",
     search: "liquid glass design skill codex claude ai workflow"
+  },
+  {
+    id: "flutter-animate",
+    name: "flutter_animate",
+    type: "package",
+    typeLabel: "Flutter 动效包",
+    description: "声明式链式动画 API，适合入场、微交互、列表与页面转场。",
+    creator: "Flutter community",
+    stack: ["Flutter", "Dart", "Animation"],
+    license: "MIT",
+    price: "免费 · 开源",
+    source: "https://pub.dev/packages/flutter_animate",
+    sourceLabel: "pub.dev 包页面",
+    preview: "flutter",
+    search: "flutter animate animation micro interaction dart package"
+  },
+  {
+    id: "flutter-animations",
+    name: "animations",
+    type: "package",
+    typeLabel: "Flutter 动效包",
+    description: "Flutter 官方 Material 动效集合，提供容器变换、共享轴与页面转场。",
+    creator: "Flutter team",
+    stack: ["Flutter", "Dart", "Material"],
+    license: "BSD-3-Clause",
+    price: "免费 · 开源",
+    source: "https://pub.dev/packages/animations",
+    sourceLabel: "pub.dev 包页面",
+    preview: "flutter",
+    search: "flutter material animations transition shared axis package"
+  },
+  {
+    id: "rive",
+    name: "Rive",
+    type: "package",
+    typeLabel: "Flutter 交互动效",
+    description: "带状态机的交互动效运行时，适合按钮、图标、角色与复杂手势反馈。",
+    creator: "Rive",
+    stack: ["Flutter", "Dart", "State Machine"],
+    license: "MIT",
+    price: "免费 · 开源运行时",
+    source: "https://pub.dev/packages/rive",
+    sourceLabel: "pub.dev 包页面",
+    preview: "flutter",
+    search: "flutter rive state machine interactive animation package"
+  },
+  {
+    id: "lottie-flutter",
+    name: "Lottie",
+    type: "package",
+    typeLabel: "Flutter 动效包",
+    description: "在 Flutter 中渲染 After Effects 导出的 Lottie 动画，适合空状态与引导页。",
+    creator: "Lottie",
+    stack: ["Flutter", "Dart", "After Effects"],
+    license: "MIT",
+    price: "免费 · 开源",
+    source: "https://pub.dev/packages/lottie",
+    sourceLabel: "pub.dev 包页面",
+    preview: "flutter",
+    search: "flutter lottie after effects animation package"
+  },
+  {
+    id: "flutter-vignettes",
+    name: "Flutter Vignettes",
+    type: "reference",
+    typeLabel: "Flutter 交互参考",
+    description: "gskinner 与 Google 合作的 Flutter 交互实验合集，适合寻找手势、卡片与导航灵感。",
+    creator: "gskinner",
+    stack: ["Flutter", "Dart", "Interaction"],
+    license: "MIT",
+    price: "免费 · 开源",
+    source: "https://github.com/gskinnerTeam/flutter_vignettes",
+    sourceLabel: "GitHub 源码",
+    preview: "flutter",
+    search: "flutter vignettes gskinner interaction experiments github"
+  },
+  {
+    id: "flutter-gems-animation",
+    name: "Flutter Gems · Animation",
+    type: "reference",
+    typeLabel: "Flutter 资源目录",
+    description: "按类别整理的 Flutter 动画、转场、Lottie、Rive 与 Motion 包索引。",
+    creator: "Flutter Gems",
+    stack: ["Flutter", "Catalog"],
+    license: "参考目录",
+    price: "免费 · 目录",
+    source: "https://fluttergems.dev/animation-transition/",
+    sourceLabel: "Flutter Gems",
+    preview: "flutter",
+    search: "flutter gems animation packages catalog"
+  },
+  {
+    id: "flutter-animation-docs",
+    name: "Flutter Animation Docs",
+    type: "reference",
+    typeLabel: "Flutter 官方文档",
+    description: "Flutter 官方动画指南：隐式动画、显式动画、物理模拟与动效性能。",
+    creator: "Flutter team",
+    stack: ["Flutter", "Documentation"],
+    license: "官方文档",
+    price: "免费",
+    source: "https://docs.flutter.dev/ui/animations",
+    sourceLabel: "Flutter 官方文档",
+    preview: "flutter",
+    search: "flutter animation documentation implicit explicit physics"
   }
 ];
 
@@ -94,6 +199,9 @@ function previewMarkup(resource, detail = false) {
   const classes = `${detail ? "detail-visual" : "resource-preview"} ${resource.preview}`;
   if (resource.preview === "glass") {
     return `<div class="${classes}" aria-hidden="true"><div class="preview-window"><div class="preview-browser"><i></i><i></i><i></i><span>liquid glass / react</span></div><div class="preview-scene"><div class="preview-glass-panel"><b>Surface, with restraint.</b><small>Readable by design.</small><i>Explore component ↗</i></div></div></div></div>`;
+  }
+  if (resource.preview === "flutter") {
+    return `<div class="${classes}" aria-hidden="true"><div class="mock-flutter"><span>FLUTTER</span><b>${safeText(resource.name)}</b><small>${safeText(resource.stack.join(" · "))}</small><i></i></div></div>`;
   }
   if (resource.preview === "button-preview") {
     return `<div class="${classes}" aria-hidden="true"><div class="button-preview-scene"><span class="preview-caption">A small interaction detail</span><span class="mock-button">Continue <span>↗</span></span></div></div>`;
